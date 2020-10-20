@@ -1,3 +1,7 @@
+// to
+// pscp -r D:\00_PROJECTs\38_highnlow_site\site root@45.137.202.41:/site
+
+
 
 //import dependencies
 const express = require("express");

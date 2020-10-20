@@ -134,51 +134,6 @@
         </header>
         <!-- End Header -->
 
-        <!-- MAIN -->
-
-        <!-- TICKER STICKY 
-        <section class="hero ticker-tradingview">        
-                <div class="tradingview-widget-container">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-                        {
-                        "symbols": [
-                        {
-                            "description": "SP500",
-                            "proName": "CME:SP1!"
-                        },
-                        {
-                            "description": "NASDAQ",
-                            "proName": "CME_MINI:NQ1!"
-                        },
-                        {
-                            "description": "DOW30",
-                            "proName": "CBOT_MINI:YM1!"
-                        },
-                        {
-                            "description": "DAX",
-                            "proName": "EUREX:FDAX1!"
-                        },
-                        {
-                            "description": "FTSE MIB",
-                            "proName": "INDEX:FTSEMIB"
-                        },
-                        {
-                            "description": "EUR.USD",
-                            "proName": "OANDA:EURUSD"
-                        }
-                        ],
-                        "colorTheme": "dark",
-                        "isTransparent": true,
-                        "displayMode": "compact",
-                        "locale": "en"
-                    }
-                    </script>
-                </div>
-        </section>
-    -->
-
         <!-- NAVIGA MERCATI -->
         <section id="services" class="section-4 odd offers featured">
             <div class="container">
@@ -246,6 +201,48 @@
             </div>
         </section>
 
+        <!-- TICKER STICKY -->
+        <section class="hero ticker-tradingview d-none d-lg-block">        
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                        "symbols": [
+                        {
+                            "description": "SP500",
+                            "proName": "CME:SP1!"
+                        },
+                        {
+                            "description": "NASDAQ",
+                            "proName": "CME_MINI:NQ1!"
+                        },
+                        {
+                            "description": "DOW30",
+                            "proName": "CBOT_MINI:YM1!"
+                        },
+                        {
+                            "description": "DAX",
+                            "proName": "EUREX:FDAX1!"
+                        },
+                        {
+                            "description": "FTSE MIB",
+                            "proName": "INDEX:FTSEMIB"
+                        },
+                        {
+                            "description": "EUR.USD",
+                            "proName": "OANDA:EURUSD"
+                        }
+                        ],
+                        "colorTheme": "dark",
+                        "isTransparent": false,
+                        "displayMode": "compact",
+                        "locale": "en"
+                    }
+                    </script>
+                </div>
+        </section>
+
         <!-- INDEX -->
         <section id="index" class="section-1 odd highlights image-right">
             <div class="container">
@@ -253,7 +250,7 @@
                     <div class="col-12 align-self-center text-center text-md-left">
                         <div class="row intro">
                             <div class="col-12 p-0">
-                                <h2 class="featured alt">Inidci</h2>
+                                <h2 class="featured alt">Indici</h2>
                                 <p>Uno sguardo ai principali indici mondiali.</p>
                             </div>
                         </div>
