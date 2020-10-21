@@ -225,5 +225,17 @@ footer .dark-button {
     
 }
 
+.trend-immage{
+
+    height: 50px;
+    width: 50px;
+}
+
+.trend-immage-small{
+
+    height: 15px;
+    width: 15px;
+}
+
 
 

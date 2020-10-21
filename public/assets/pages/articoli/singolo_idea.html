@@ -141,18 +141,12 @@
                     <!-- Item 1 -->
                     <div class="swiper-slide slide-center swiper-slide-active" style="width: 1162px;">
                         
-                        <img src="assets/images/bg-7.jpg" class="full-image" data-mask="50">
+
+                        <div id="immageMain"></div>
                         
                         <div class="slide-content row text-center">
                             <div class="col-12 mx-auto inner">
-                                <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text aos-init aos-animate">Data scientists are <br>a booming profession.</h1>
-                                <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb" class="aos-init aos-animate">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="/#demos">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="/#pages">Pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Single Post</li>
-                                    </ol>
-                                </nav>
+                                <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text aos-init aos-animate" id="title"></h1>
                             </div>
                         </div>
                     </div>
@@ -166,140 +160,32 @@
                 <div class="row">
 
                     <!-- Main -->
-                    <main class="col-12 col-lg-8 p-0">
+                    <main class="col-12 p-0">
                         <div class="row">
                             <div class="col-12 align-self-center">
-                                <h2 class="featured mt-0 ml-0">TITOLO</h2>
-                                <h5>SUBTITLE</h5>
-                                <p>
-                                    PARAGRAPH1
-                                </p>
-
-                                <!-- Image 1 -->
-                                <div class="gallery">
-                                    <a href="assets/images/bg-1.jpg">
-                                        <img src="assets/images/bg-1.jpg" class="w-100">
-                                    </a>
+                                <h2 class="featured mt-0 ml-0" id="titleMain"></h2>
+                                <div class="row">
+                                    <h3  id="ticker"></h3> 
+                                    <div id="view"></div> 
                                 </div>
 
-                                <blockquote>
-                                    BLOCKQUOTE1       
-                                </blockquote>
-
-                                <h4>SUBTITLE2</h4>
-                                <p>
-                                    PARAGRAPH2
-                                </p>
-
-                                <!-- Image -->
-                                <div class="gallery">
-                                    <a href="assets/images/bg-1.jpg">
-                                        <img src="assets/images/bg-1.jpg" class="w-100">
-                                    </a>
+                                <!-- MAIN CHART -->
+                                <div id="graph">
                                 </div>
 
-                                <h4>SUBTITLE3</h4>
-                                <p>
-                                    PARAGRAPH3
-                                </p>
-                                <h4>SUBTITLE4</h4>
-                                <p>
-                                    PARAGRAPH4
-                                </p>
-                                <h4>SUBTITLE5</h4>
-                                <ul>
-                                    <li>LIST1</li>
-                                    <li>LIST2</li>
-                                    <li>LIST3</li>
-                                </ul>
-
-                                <h4>SUBTITLE-FIN</h4>
-                                <p>
-                                    PARAGRAPH-FIN
-                                </p>
                                 <!-- Post Holder -->
                                 <ul class="mb-5 post-holder">
                                     <li class="post-meta-item">
-                                        <time class="date"><span class="posted-on">Posted on <a href="#" rel="bookmark"><time class="entry-date published updated" datetime="2018-11-01T06:18:46+00:00">November 12, 2019</time></a></span></time>
+                                        <time class="date"><span class="posted-on">Postato il <a href="#" rel="bookmark"><time class="entry-date published updated" datetime="2018-11-01T06:18:46+00:00">November 12, 2019</time></a></span></time>
                                     </li>
                                 </ul>
+
+
+                                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
                             </div>
                         </div>        
                     </main>
-
-                    <!-- Sidebar -->
-                    <aside class="col-12 col-lg-4 pl-lg-5 p-0 float-right sidebar">                    
-                        <div class="row">
-                            <div class="col-12 align-self-center text-left">                                
-
-                                <!-- Widget [author] -->
-                                <div class="item widget-author">  
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            <a href="#" class="author">
-                                                <h4 class="title">HighNLow</h4>
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <span class="d-lg-flex align-items-center"><i class="icon-clock mr-2"></i>3 Days Ago</span> <span class="badge tag m-0 active">Technology</span>
-                                        </li>
-                                    </ul>                                      
-                                </div>
-
-                                <!-- Widget [categories] -->
-                                <div class="item widget-categories">  
-                                    <h4 class="title">Categories</h4>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="#">Technology</a>
-                                            <span class="badge circle">23</span>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="#">Education</a>
-                                            <span class="badge circle">41</span>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="#">Industry</a>
-                                            <span class="badge circle">26</span>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="#">Development</a>
-                                            <span class="badge circle">75</span>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="#">Architecture</a>
-                                            <span class="badge circle">39</span>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="#">Management</a>
-                                            <span class="badge circle">62</span>
-                                        </li>
-                                    </ul>                                
-                                </div>
-
-                                <!-- Widget [share-this] -->
-                                <div class="item widget-share-this">
-                                    <h4 class="title">Share This</h4>
-                                    <ul class="navbar-nav social share-list">
-                                        <li class="nav-item">
-                                            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Widget [gallery] -->
-                                <div class="item widget-gallery">
-                                    <h4 class="title">Image Gallery</h4>                                    
-                                    <div class="gallery row justify-content-center">
-                                        <a class="col-6 item" href="assets/images/portfolio-1.jpg">
-                                            <img src="assets/images/gallery-1.jpg" class="w-100">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
                 </div>
             </div>
         </section>
@@ -479,7 +365,17 @@
         <script src="../../../assets/js/vendor/particles.min.js"></script>
         <script src="../../../assets/js/main.js"></script>
 
-        <script src="../../../assets/js/formazione.js"></script>
+        <script src="../../../assets/js/idea.js"></script>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+        <!-- css.gg -->
+        <link href='https://css.gg/css' rel='stylesheet'>
+
+        <!-- UNPKG -->
+        <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+
+        <!-- JSDelivr -->
+        <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
 
         <!-- #endregion Global ========================= -->
         <!-- Modal [responsive menu] -->
