@@ -1,27 +1,26 @@
 const mongoose = require("mongoose");
 
-const Idea = require("../models/ideaModel");
+const Formazione = require("../models/formazioneModel");
 
 //TODO
-exports.idea_get_all = (req, res, next) => {
-    Idea.find()
-    .select("title subtitle date ticker view tradingviewLink photoGallery _id")
+exports.formazione_get_all = (req, res, next) => {
+    Formazione.find()
+    .select("title subtitle paragraph date tag photoGallery _id")
     .exec()
     .then(docs => {
         const response = {
-            ideas: docs.map(doc => {
+            formaziones: docs.map(doc => {
             return {
                 title: doc.title,
                 subtitle: doc.subtitle,
+                paragraph: doc.paragraph,
                 date: doc.date,
-                ticker: doc.ticker,
-                view: doc.view,
-                tradingviewLink: doc.tradingviewLink,
+                tag: doc.tag,
                 photoGallery: doc.photoGallery,
                 _id: doc._id,
-                request: {
-                type: "GET",
-                url: "idea/" + doc._id
+                  request: {
+                  type: "GET",
+                  url: "formazione/" + doc._id
                 }
             };
             })
@@ -44,24 +43,24 @@ exports.idea_get_all = (req, res, next) => {
 
 
 //TODO
-exports.ideas_get_idea = (req, res, next) => {
-  const id = req.params.ideaId;
-  Idea.findById(id)
-    .select("title subtitle date ticker view tradingviewLink photoGallery _id")
+exports.formaziones_get_formazione = (req, res, next) => {
+  const id = req.params.formazioneId;
+  Formazione.findById(id)
+    .select("title subtitle paragraph date tag photoGallery _id")
     .exec()
     .then(doc => {
       if (doc) {
         res.status(200).json(JSON.stringify({
-          idea: doc,
+          formazione: doc,
           request: {
             type: "GET",
-            url: "//http://45.137.202.41:5000/idea/"+ doc._id
+            url: "//http://45.137.202.41:5000/formazione/"+ doc._id
           }
         }));
       } else {
         res
           .status(404)
-          .json(JSON.stringify({ message: "provided ID idea NOT FOUND" }));
+          .json(JSON.stringify({ message: "provided ID formazione NOT FOUND" }));
       }
     })
     .catch(err => {

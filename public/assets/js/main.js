@@ -1025,7 +1025,7 @@ jQuery(function ($) {
     if(cookieNotice) {
 
         // Translate
-        gdprCookieNoticeLocales.en = {
+        gdprCookieNoticeLocales.it = {
             description: 'We use cookies to offer you a better browsing experience, personalise content and ads, to provide social media features and to analyse our traffic. Read about how we use cookies and how you can control them by clicking Cookie Settings. You consent to our cookies if you continue to use this website.',
             settings: 'Cookie settings',
             accept: 'Accept cookies',
@@ -1043,7 +1043,7 @@ jQuery(function ($) {
         }
 
         gdprCookieNotice({
-            locale: 'en', // This is the default value
+            locale: 'it', // This is the default value
             timeout: 2000, // Time until the cookie bar appears
             expiration: 30, // This is the default value, in days
             domain: window.location.hostname, // If you run the same cookie notice on all subdomains, define the main domain starting with a .

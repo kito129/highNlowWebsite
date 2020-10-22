@@ -30,7 +30,7 @@ $(document).ready(function(){
     //ARTIST
     var idIdea=getUrlParameterValue(self.location.href,"id");
 
-	$.get("http://localhost:5000/idea/" + idIdea, function(data, status){
+	$.get("//http://45.137.202.41:5000/idea/" + idIdea, function(data, status){
 
         var Idea=JSON.parse(data);
         var _idea = Idea.idea;
@@ -38,6 +38,11 @@ $(document).ready(function(){
         $("#titleMain").text(_idea.title);
         $("#title").text(_idea.title);
         $("#ticker").text(_idea.ticker);
+
+
+        var data = new Date(_idea.date);
+
+        $("#posted").text( `${data.getDate()}/${data.getMonth()}/${data.getFullYear()} `);
 
         var direction = "";
 

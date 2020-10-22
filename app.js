@@ -14,6 +14,7 @@ const path = require('path');
 
 //import API routes
 const ideasRoutes = require("./api/routes/ideasRoutes");
+const formazioneRoutes = require("./api/routes/formazioneRoutes");
 
 //use middleware 
 app.use(morgan("dev"));
@@ -93,6 +94,7 @@ app.use((error, req, res, next) => {
 
 // Routes which should handle requests
 app.use("/idea", ideasRoutes);
+app.use("/formazione", formazioneRoutes);
 
 // Routes for public file (static)
 app.use(express.static(path.join(__dirname, './public')));
