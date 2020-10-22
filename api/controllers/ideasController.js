@@ -55,7 +55,7 @@ exports.ideas_get_idea = (req, res, next) => {
           idea: doc,
           request: {
             type: "GET",
-            url: "//http://45.137.202.41:5000/idea/"+ doc._id
+            url: "http://localhost:5000/idea/"+ doc._id
           }
         }));
       } else {

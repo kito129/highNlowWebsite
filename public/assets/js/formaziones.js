@@ -1,11 +1,9 @@
 $(document).ready(function(){
 
 
-	$.get("//http://45.137.202.41:5000/formazione", function(data, status){
+	$.get("http://localhost:5000/formazione", function(data, status){
 
         var Formazione=JSON.parse(data);
-
-        console.log(Formazione);
 
         var text="";
 
@@ -27,7 +25,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="//http://45.137.202.41:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
+                            <a href="http://localhost:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
                                 <h4>${_formazione.title}.</h4>
                             </a>
                         </div>
@@ -41,8 +39,6 @@ $(document).ready(function(){
 			
         }
 
-        console.log(text);
-
         $("#card").append(
             `
 
@@ -51,8 +47,6 @@ $(document).ready(function(){
             </div>
             `
         );
-        
-
 
     });
  
