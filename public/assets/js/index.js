@@ -59,7 +59,7 @@ $(document).ready(function(){
         var text="";
 
 
-		for(var i=0;i<4;i++){
+		for(var i=0;i<3;i++){
 
             var idea = Idea.ideas[i];
 
@@ -92,7 +92,7 @@ $(document).ready(function(){
 			text = text +
 
                 `
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3 card p-3 text-center item">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 card p-3 text-center item">
                     <div class="image-over">
                         <img src="${img}" alt="mia">
                     </div>

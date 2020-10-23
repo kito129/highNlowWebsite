@@ -27,6 +27,10 @@ exports.idea_get_all = (req, res, next) => {
             })
         };
         if (docs.length > 0) {
+
+          //REODER LIST
+
+
         res.status(200).json(JSON.stringify(response));
         } else {
             res.status(404).json(JSON.stringify({

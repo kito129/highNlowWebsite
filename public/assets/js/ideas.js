@@ -49,7 +49,7 @@ $(document).ready(function(){
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
                             <a href="http://localhost:5000/assets/pages/articoli/singolo_idea.html?id=${idea._id}">
-                                <h4>${idea.title}.</h4>
+                                <h4>${idea.title}</h4>
                             </a>
                         </div>
                         <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">

@@ -26,7 +26,7 @@ $(document).ready(function(){
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
                             <a href="http://localhost:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
-                                <h4>${_formazione.title}.</h4>
+                                <h3>${_formazione.title}</h3>
                             </a>
                         </div>
                         <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
