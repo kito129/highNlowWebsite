@@ -6,10 +6,13 @@ const FormazioneController = require('../controllers/formazioneController');
 
 // Handle incoming requests to /idea
 
-// TODO
+// ok
 router.get("/", FormazioneController.formazione_get_all);//
 
 // TODO
+router.get("/home", FormazioneController.formazione_get_home);//
+
+// ok
 router.get("/:formazioneId", FormazioneController.formaziones_get_formazione);//
 
 

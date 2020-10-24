@@ -1,16 +1,15 @@
 $(document).ready(function(){
 
 
-	$.get("http://45.137.202.41:5000/formazione", function(data, status){
+	$.get("http://localhost:5000/formazione/home", function(data, status){
 
         var Formazione=JSON.parse(data);
 
         var text="";
 
-
 		for(var i=0;i<3;i++){
 
-            var _formazione = Formazione.formaziones[i];
+            var _formazione = Formazione[i];
 
             var data = new Date(_formazione.date);
 
@@ -25,7 +24,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="http://45.137.202.41:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
+                            <a href="http://localhost:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
                                 <h4>${_formazione.title}</h4>
                             </a>
                         </div>
@@ -51,7 +50,7 @@ $(document).ready(function(){
     });
 
 
-    $.get("http://45.137.202.41:5000/idea", function(data, status){
+    $.get("http://localhost:5000/idea/home", function(data, status){
 
         var Idea=JSON.parse(data);
         
@@ -61,7 +60,7 @@ $(document).ready(function(){
 
 		for(var i=0;i<3;i++){
 
-            var idea = Idea.ideas[i];
+            var idea = Idea[i];
 
             var data = new Date(idea.date);
 
@@ -98,7 +97,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="http://45.137.202.41:5000/assets/pages/articoli/singolo_idea.html?id=${idea._id}">
+                            <a href="http://localhost:5000/assets/pages/articoli/singolo_idea.html?id=${idea._id}">
                                 <h4>${idea.title}</h4>
                             </a>
                         </div>

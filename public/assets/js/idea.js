@@ -30,7 +30,7 @@ $(document).ready(function(){
     //ARTIST
     var idIdea=getUrlParameterValue(self.location.href,"id");
 
-	$.get("http://45.137.202.41:5000/idea/" + idIdea, function(data, status){
+	$.get("http://localhost:5000/idea/" + idIdea, function(data, status){
 
         var Idea=JSON.parse(data);
         var _idea = Idea.idea;

@@ -92,7 +92,7 @@
                     <a href="./assets/pages/articoli/idee.html" class="nav-link">Idee</i></a>
                 </li>
                 <li class="nav-item ">
-                    <a href="./assets/pages/articoli/formazione.html" class="nav-link">Formazione</i></a>
+                    <a href="./assets/pages/articoli/formazione.html" class="nav-link">Articoli</i></a>
                 </li>
                 <li class="nav-item ">
                     <a href="./assets/pages/mercati.html" class="nav-link">Mercati</i></a>
@@ -318,71 +318,6 @@
             </div>
         </section>
 
-        <!-- FORMAZIONE -->
-        <section id="news" class="section-2 odd carousel showcase news featured all">
-            <div class="overflow-holder">
-                <div class="container">
-                    <div class="row intro">
-                        <div class="col-12 col-md-9 align-self-center text-center text-md-left">
-                            <h2 class="featured">Formazione</h2>
-                            <p>Articoli, news, approfondimenti di mercato e formazione gratuita, tutte le conoscenze che avrai bisogno per affrontare il mondo dei mercati.</p>
-                        </div>
-                        <div class="col-12 col-md-3 align-self-end">
-                            <a href="/assets/pages/articoli/formazione.html" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-grid"></i>Vedi Tutti</a>
-                        </div>
-                    </div>
-                      <!-- FORMAZIONE -->
-                    <section id="blog" class="section-1 section-vs-30 section-vsr-30 body-mode-dark showcase blog-grid masonry news">
-                        <div data-aos="zoom-in" data-aos-delay="800" data-aos-anchor="body" class="container full-grid aos-init aos-animate">
-                            <div class="row content blog-grid masonry" >
-                                <main class="col-12 p-0 " id="formazione">
-                                     <!-- COLUMN -->
-                                   
-                                  
-                                     <!--END COLUMN -->
-                                </main>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <!-- ISCRIZIONE -->
-        <section id="subscribe" class="section-3 odd subscribe featured all">
-            <div class="container smaller">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Iscriviti al Club</h2>
-                        <p class="text-max-800">Iscriviti al nostro club per avere accesso a tutto il materiale riservato.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 p-0">
-                        <form action="php/form.php" id="leverage-subscribe" class="row m-auto items">
-                            <input type="hidden" name="section" value="leverage_subscribe">
-
-                            <input type="hidden" name="reCAPTCHA" data-key="6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7">
-                            <!-- Remove this field if you want to disable recaptcha -->
-
-                            <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
-                                <input type="text" name="name" class="form-control field-name" placeholder="Nome e Cognome">
-                            </div>
-                            <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
-                                <input type="email" name="email" class="form-control field-email" placeholder="Email">
-                            </div>
-                            <div class="col-12 col-lg-2 m-lg-0 input-group align-self-center item">
-                                <a class="btn primary-button w-100">ISCRIVITI</a>
-                            </div>
-                            <div class="col-12 text-center">
-                                <span class="form-alert mt-5 mb-0" style="display: none;"></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- IDEE DI MERCATO -->
         <section id="news" class="section-4 odd carousel showcase news featured all">
             <div class="overflow-holder">
@@ -401,6 +336,78 @@
                         <div data-aos="zoom-in" data-aos-delay="800" data-aos-anchor="body" class="container full-grid aos-init aos-animate">
                             <div class="row content blog-grid masonry" >
                                 <main class="col-12 p-0 " id="idea">
+                                     <!-- COLUMN -->
+                                   
+                                  
+                                     <!--END COLUMN -->
+                                </main>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- ISCRIZIONE -->
+        <section id="contact" class="section-3 odd subscribe featured all">
+            <div class="container smaller">
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2>Iscriviti al Club</h2>
+                        <p class="text-max-800">Iscriviti al nostro club per avere accesso a tutto il materiale riservato.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-12 p-0">
+                        <h4 id="registerRepsonse"></h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-12 p-0">
+
+                        <form id="msform" class="row m-auto items">
+
+                            <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
+                                <input type="text" name="name" class="form-control field-name" placeholder="Nome e Cognome" required>
+                            </div>
+                            <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
+                                <input type="email" name="email" class="form-control field-email" placeholder="Email" required>
+                            </div>
+                            <div class="col-12 col-lg-2 m-lg-0 input-group align-self-center item">
+                                <a type="submit" id="next-3" class="send btn primary-button">ISCRVITI<i class="btn-icon icon-login left"></i></a>
+                            </div>
+                            <div class="col-12 text-center">
+                                <span class="form-alert mt-5 mb-0" id="responseRegister"></span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAZIONE -->
+        <section id="news" class="section-2 odd carousel showcase news featured all">
+            <div class="overflow-holder">
+                <div class="container">
+                    <div class="row intro">
+                        <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                            <h2 class="featured">Articoli</h2>
+                            <p>News, approfondimenti di mercato e formazione gratuita, tutte le conoscenze che avrai bisogno per affrontare il mondo dei mercati.</p>
+                        </div>
+                        <div class="col-12 col-md-3 align-self-end">
+                            <a href="/assets/pages/articoli/formazione.html" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-grid"></i>Vedi Tutti</a>
+                        </div>
+                    </div>
+                      <!-- FORMAZIONE -->
+                    <section id="blog" class="section-1 section-vs-30 section-vsr-30 body-mode-dark showcase blog-grid masonry news">
+                        <div data-aos="zoom-in" data-aos-delay="800" data-aos-anchor="body" class="container full-grid aos-init aos-animate">
+                            <div class="row content blog-grid masonry" >
+                                <main class="col-12 p-0 " id="formazione">
                                      <!-- COLUMN -->
                                    
                                   
@@ -530,7 +537,7 @@
                                     <a href="/" class="badge tag">Home</a>
                                     <a href="./assets/pages/mercati.html" class="badge tag">Mercati</a>
                                     <a href="./assets/pages/articoli/idee.html" class="badge tag">Idee di Mercato</a>
-                                    <a href="./assets/pages/articoli/formazione.html" class="badge tag">Formazione</a>
+                                    <a href="./assets/pages/articoli/formazione.html" class="badge tag">Articoli</a>
                                     <a href="./assets/pages/partner.html" class="badge tag">Partner</a>
                                     <a href="./assets/pages/contatti.html" class="badge tag">Contatti</a>
                                     <a href="./assets/pages/iscrizione.html" class="badge tag">Iscrizione</a>

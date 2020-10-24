@@ -6,10 +6,13 @@ const IdeasController = require('../controllers/ideasController');
 
 // Handle incoming requests to /idea
 
-// TODO
+// ok
 router.get("/", IdeasController.idea_get_all);//
 
-// TODO
+// ok
+router.get("/home", IdeasController.idea_get_home);//
+
+// ok
 router.get("/:ideaId", IdeasController.ideas_get_idea);//
 
 

@@ -4,7 +4,7 @@
 // TODO
 
 //  IMG FORMAZIONE  --- 
-//  FROMAZIONE -> ARTICOLI
+//  FROMAZIONE -> ARTICOLI ---
 // IDEE TOGLIERE PUNTO  --- 
 
 // PARTNER   --- 
@@ -12,10 +12,10 @@
 //BANNER  ---  
 // CHECK ALL HEAD AND FOOTER  ---  
 // COOCKIE
-//MAIL
+// MAIL
 
-//REGISTRAZIONE POST
-// API PER HOME // LAST 3 IDEA & ARTICLE
+// REGISTRAZIONE POST
+// API PER HOME // LAST 3 IDEA & ARTICLE  --- 
 // TELEGRAM  ---  
 // LOGO AND ICON -- - - 
 
@@ -30,10 +30,12 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require('path');
+const nodemailer = require('nodemailer');
 
 //import API routes
 const ideasRoutes = require("./api/routes/ideasRoutes");
 const formazioneRoutes = require("./api/routes/formazioneRoutes");
+const registrationRoutes = require("./api/routes/registrationRoutes");
 
 //use middleware 
 app.use(morgan("dev"));
@@ -117,6 +119,54 @@ app.use("/formazione", formazioneRoutes);
 
 // Routes for public file (static)
 app.use(express.static(path.join(__dirname, './public')));
+
+// --- MAIL AND REG ---
+
+app.use('/sendemail',(req,res,next)=>{
+  /*Transport service is used by node mailer to send emails, it takes service and auth object as parameters.
+  here we are using gmail as our service
+  In Auth object , we specify our email and password
+  */
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    port: 465,
+    secure: true,
+    auth: {
+      user: 'tuttibonus07@gmail.com',
+      pass: 'QDtm(t/5ZN' // naturally, replace both with your real credentials or an application-specific password
+    }
+  });
+  /*
+  In mailOptions we specify from and to address, subject and HTML content.
+  In our case , we use our personal email as from and to address,
+  Subject is Contact name and
+  html is our form details which we parsed using bodyParser.
+  */
+  var mailOptions = {
+    from: 'tuttibonus07@gmail.com',//replace with your email
+    to: 'selva.marco.bet@gmail.com',//replace with your email
+    subject: `Contact name: ${req.body.name}`,
+    html:`<h1>Contact details</h1>
+<h2> name:${req.body.name} </h2><br>
+<h2> email:${req.body.email} </h2><br>
+<h2> message:${req.body.message} </h2><br>`
+  };
+  /*
+   Here comes the important part, sendMail is the method which actually sends email, it takes mail options and
+  call back as parameter
+  */
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+      res.send('error') // if error occurs send error as response to client
+    }
+    else {
+      console.log('Email sent: ' + info.response);
+      res.send('Sent Successfully')//if mail is sent successfully send Sent successfully as response
+    }
+  });
+})
+
 
 
 // --- API START ---
