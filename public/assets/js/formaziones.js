@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	$.get("http://localhost:5000/formazione", function(data, status){
+	$.get("http://45.137.202.41:5000/formazione", function(data, status){
 
         var Formazione=JSON.parse(data);
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="http://localhost:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
+                            <a href="http://45.137.202.41:5000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
                                 <h3>${_formazione.title}</h3>
                             </a>
                         </div>

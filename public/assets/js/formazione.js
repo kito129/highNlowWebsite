@@ -30,7 +30,7 @@ $(document).ready(function(){
     //ARTIST
     var idFormazione=getUrlParameterValue(self.location.href,"id");
 
-	$.get("http://localhost:5000/formazione/" + idFormazione, function(data, status){
+	$.get("http://45.137.202.41:5000/formazione/" + idFormazione, function(data, status){
 
         var Formazione=JSON.parse(data);
         var _formazione = Formazione.formazione;

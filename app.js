@@ -1,6 +1,25 @@
 // to
 // pscp -r D:\00_PROJECTs\38_highnlow_site\site root@45.137.202.41:/site
 
+// TODO
+
+//  IMG FORMAZIONE  --- 
+//  FROMAZIONE -> ARTICOLI
+// IDEE TOGLIERE PUNTO  --- 
+
+// PARTNER   --- 
+// ETORO IMG ONLINE  ---  
+//BANNER  ---  
+// CHECK ALL HEAD AND FOOTER  ---  
+// COOCKIE
+//MAIL
+
+//REGISTRAZIONE POST
+// API PER HOME // LAST 3 IDEA & ARTICLE
+// TELEGRAM  ---  
+// LOGO AND ICON -- - - 
+
+
 
 // --- IMPORT ---
 
