@@ -4,6 +4,17 @@
 
     <head>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1TE3Z1609"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C1TE3Z1609');
+        </script>
+        <!-- end -->
+
         <!-- ==============================================
         Basic Page Needs
         =============================================== -->
@@ -167,7 +178,7 @@
                     <div class="row intro">
                         <div class="col-12 col-md-9 align-self-center text-center text-md-left">
                             <h2 class="featured">Mercati</h2>
-                            <h5 class="description">Aggioramenti costanti sui Mercati una sezione dedicata ad analisi e view di Mercato.</h5>
+                            <h5 class="description">Aggioramenti costanti sui Mercati, sezione dedicata ad analisi e view di Mercato.</h5>
                             <p>Un rapido sguardo ai principali strumenti globali.</p>
                         </div>
                         <div class="col-12 col-md-3 align-self-end">
@@ -325,7 +336,7 @@
                     <div class="row intro">
                         <div class="col-12 col-md-9 align-self-center text-center text-md-left">
                             <h2 class="featured">Idee di Mercato</h2>
-                            <p>Idee di mercato</p>
+                            <p>Le nostre view di mercato su titoli futures e forex e commodities.</p>
                         </div>
                         <div class="col-12 col-md-3 align-self-end">
                             <a href="/assets/pages/articoli/idee.html" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-grid"></i>Vedi Tutti</a>
@@ -354,22 +365,24 @@
                 <div class="row text-center intro">
                     <div class="col-12">
                         <h2>Iscriviti al Club</h2>
-                        <p class="text-max-800">Iscriviti al nostro club per avere accesso a tutto il materiale riservato.</p>
+                        <p class="text-max-800">Iscriviti al nostro club per avere accesso a tutto il materiale riservato e ai nostri partner.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-12 p-0 text-center justify-content-center center">
+                        <h3 class="text-center justify-content-center" id="responseRegister"></h3>
+                        <h5 class="text-center justify-content-center" id="responseRegister2"></h5>
+                        <h5 class="text-center justify-content-center" id="responseRegister3"></h5>
                     </div>
                 </div>
 
                 <div class="row">
                     
                     <div class="col-12 p-0">
-                        <h4 id="registerRepsonse"></h4>
-                    </div>
-                </div>
 
-                <div class="row">
-                    
-                    <div class="col-12 p-0">
-
-                        <form id="msform" class="row m-auto items">
+                        <form id="msform" class="row m-auto items" onsubmit="return validateForm()">
 
                             <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
                                 <input type="text" name="name" class="form-control field-name" placeholder="Nome e Cognome" required>
@@ -379,9 +392,6 @@
                             </div>
                             <div class="col-12 col-lg-2 m-lg-0 input-group align-self-center item">
                                 <a type="submit" id="next-3" class="send btn primary-button">ISCRVITI<i class="btn-icon icon-login left"></i></a>
-                            </div>
-                            <div class="col-12 text-center">
-                                <span class="form-alert mt-5 mb-0" id="responseRegister"></span>
                             </div>
                         </form>
 
@@ -525,7 +535,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="https://telegram.me/@HighNLowita" class="nav-link">
+                                            <a href="https://t.me/@HighNLowita" class="nav-link">
                                                 <i class="icon-phone mr-2"></i>
                                                 @tm.HighLow
                                             </a>
@@ -586,14 +596,6 @@
             </section>
         </footer>
 
-        <!-- Coockie -->
-        <div class="gdpr-cookie-notice">
-            <p class="gdpr-cookie-notice-description">Usiamo i coockie per migliorare l'esperienza di utilizzo del sito. Scopri di più su come li usiamo in Info. Autorizzi l'uso dei cocki procedendo al sito.</p>
-            <nav class="gdpr-cookie-notice-nav">
-              <a href="#" class="gdpr-cookie-notice-nav-item gdpr-cookie-notice-nav-item-settings">Info Coockie</a>
-              <a href="#" class="gdpr-cookie-notice-nav-item gdpr-cookie-notice-nav-item-accept gdpr-cookie-notice-nav-item-btn">Accetta Coockie</a>
-            </nav>
-          </div>
 
         <!-- Scroll [to top] -->
         <div id="scroll-to-top" class="scroll-to-top">

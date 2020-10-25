@@ -7,7 +7,13 @@ const RegistrationController = require('../controllers/registrationController');
 // Handle incoming requests to /idea
 
 // ok
-router.get("/", RegistrationController.registratons_create_registraton);//
+router.post("/create", RegistrationController.registratons_create_registraton);//
+
+// ok
+router.post("/checkReg", RegistrationController.registratons_check_registraton);//
+
+// ok
+router.get("/all", RegistrationController.registratons_get_registraton);//
 
 
 module.exports = router;

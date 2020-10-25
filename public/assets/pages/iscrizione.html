@@ -4,6 +4,17 @@
 
     <head>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1TE3Z1609"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C1TE3Z1609');
+        </script>
+        <!-- end -->
+
         <!-- ==============================================
         Basic Page Needs
         =============================================== -->
@@ -134,8 +145,8 @@
         <!-- End Header -->
         <!-- MAIN -->
 
-       <!-- ISCRIZIONE -->
-       <section id="subscribe" class="section-1 odd subscribe featured all">
+        <!-- ISCRIZIONE -->
+        <section id="contact" class="section-3 odd subscribe featured all">
             <div class="container smaller">
                 <div class="row text-center intro">
                     <div class="col-12">
@@ -143,24 +154,33 @@
                         <p class="text-max-800">Iscriviti al nostro club per avere accesso a tutto il materiale riservato.</p>
                     </div>
                 </div>
+
                 <div class="row">
+                    
+                    <div class="col-12 p-0 text-center justify-content-center">
+                        <h3 class="text-center justify-content-center" id="responseRegister"></h3>
+                        <h5 class="text-center justify-content-center" id="responseRegister2"></h5>
+                        <h5 class="text-center justify-content-center" id="responseRegister3"></h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
                     <div class="col-12 p-0">
-                        <form action="php/form.php" id="leverage-subscribe" class="row m-auto items">
-                            <input type="hidden" name="section" value="leverage_subscribe">
+
+                        <form id="msform" class="row m-auto items">
 
                             <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
-                                <input type="text" name="name" class="form-control field-name" placeholder="Nome e Cognome">
+                                <input type="text" name="name" class="form-control field-name" placeholder="Nome e Cognome" required>
                             </div>
                             <div class="col-12 col-lg-5 m-lg-0 input-group align-self-center item">
-                                <input type="email" name="email" class="form-control field-email" placeholder="Email">
+                                <input type="email" name="email" class="form-control field-email" placeholder="Email" required>
                             </div>
                             <div class="col-12 col-lg-2 m-lg-0 input-group align-self-center item">
-                                <a class="btn primary-button w-100">ISCRIVITI</a>
-                            </div>
-                            <div class="col-12 text-center">
-                                <span class="form-alert mt-5 mb-0" style="display: none;"></span>
+                                <a type="submit" id="next-3" class="send btn primary-button">ISCRVITI<i class="btn-icon icon-login left"></i></a>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -172,7 +192,7 @@
                 <div class="row text-center justify-content-center intro">
                     <div class="col-12">
                         <h2>Resta in contatto</h2>
-                        <p class="text-max-800">Segui tutte le news lettere e tieniti in contatto con noi per tutte le nostre esclusive, collaborazioni e aggiornamenti prioritari.</p>
+                        <p class="text-max-800">Segui tutte le news letter e tieniti in contatto con noi per tutte le nostre esclusive, le collaborazioni e gli aggiornamenti prioritari.</p>
                         <div class="row justify-content-center">
                             <a href="./contatti.html" class="btn primary-button w-50"></span> CONTATTI</a>
                         </div>
@@ -255,7 +275,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="https://telegram.me/@HighNLowita" class="nav-link">
+                                            <a href="https://t.me/@HighNLowita" class="nav-link">
                                                 <i class="icon-phone mr-2"></i>
                                                 @tm.HighLow
                                             </a>

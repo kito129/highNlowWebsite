@@ -1,6 +1,15 @@
 {
     "env": {
         "MONGO_ATLAS_PW": "tgtfAdL9XcAsFky6",
-        "JWT_KEY": "secret"
+        "GMAIL_USER": "locustcamtv@gmail.com",
+        "GMAIL_PASSWD": "23anSZBC6aVS",
+        "JWT_KEY": "secret",
+        "ID_CLIENT": "375330882626-jjtoravrscteem7gl15scs69v6krtdfg.apps.googleusercontent.com",
+        "CLIENT_SECRET": "-BLlKwHwqTSF_het6LFhvVJQ",
+        "AUTH_CODE": "4/0AfDhmrgT2IQFxYVhoEDSusi2p8JP028xG8NGHzmiOCfA11JedC0tm0wwpGlpJfqXmAw60w",
+        "REFRESH_CODE": "1//046UYXHRFTrdBCgYIARAAGAQSNwF-L9IranDWFCjSUNI_lC7XotWkw9s_yW1BHyJlBtDGF6FoPBRE_uexI191ymPHMT1vI_AuOXI",
+        "ACCES_TOKEN": "ya29.a0AfH6SMCQy49SATVexnDjP24KRb1Uj6j11m-LhbOGAmKqMGpHAB2QWC9IHdAWlg-jcSirnqfuwnrqTaawjYHNKEluSvao7i-5MtWz3T-tuyVOKhLgNV_WHcXkpg4dxm9zIxC8VA0lKzscdN1iMEQRPANOFK-zlV66o-U"
+
+
     }
 }

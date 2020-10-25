@@ -1228,8 +1228,25 @@ $(function () {
 })
 
 /*----------------------------------------------
-12. MAIL
+12. REGISTRATION AND MAIL
 ----------------------------------------------*/
+
+let check = true;
+
+function validateForm() {
+    var x = document.forms["msform"]["email"].value;
+    var y = document.forms["msform"]["name"].value;
+    if (x == "" || ((x.includes("@")==0  || (x.includes(".")==0  ) ))) {
+      alert("Email  non valida");
+      check = false;
+      return false;
+    }    
+    if (y == "") {
+      alert("Devi mettere il tuo nome");
+      check = false;
+      return false;
+    }
+  }
 
 
 $(function () {
@@ -1242,79 +1259,115 @@ $(function () {
     // Bind to the submit event of our form
     $('#msform').submit(function (event) {
 
-        // Prevent default posting of form - put here to work in case of errors
-        event.preventDefault();
+        console.log(check);
+        if(check){
 
-        // Abort any pending request
-        if (request) {
-            request.abort();
+            // Prevent default posting of form - put here to work in case of errors
+            event.preventDefault();
+
+            // Abort any pending request
+            if (request) {
+                request.abort();
+            }
+
+            // Serialize the data in the form
+            var name = $('input[name="name"]').val();
+            var email = $('input[name="email"]').val();
+
+            $.ajax({
+
+                // check if user already regitered
+                url : "http://highnlow.it/registration/checkReg",
+                type: "POST",
+                contentType: "application/json; carset=utf-8",
+                dataType   : "json",
+                data: JSON.stringify(
+                    {
+                        "name":name,
+                        "email": email,
+
+                    }
+                ),
+                success    : function(data,status,xrh){
+
+                    // user is NEW
+                    // POST in DB
+                    $.ajax({
+
+                        url : "http://highnlow.it/registration/create",
+                        type: "POST",
+                        contentType: "application/json; carset=utf-8",
+                        dataType   : "json",
+                        data: JSON.stringify(
+                            {
+                                "name":name,
+                                "email": email,
+                            }
+                        ),
+                        success    : function(data,status,xrh){
+
+                            $("#responseRegister").append("Correttamente registrato al nostro club.");
+                            $("#responseRegister2").append("Riceverai a breve la prima newsletter, con una grande opportunità fornita dai nostri partner.");
+                            $("#responseRegister3").append("Benvenuto nel Mondo HighNLow.");
+                            // 200 DA REG, NON IN DB
+                            $.ajax({
+
+                                // CALL BACK END TO SEND EMAIL TO NEW SUBSCRIBER
+                                url : "http://highnlow.it/email/send",
+                                type: "POST",
+                                contentType: "application/json; carset=utf-8",
+                                dataType   : "json",
+                                data: JSON.stringify(
+                                    {
+                                        "name":name,
+                                        "email": email,
+                                    }
+                                ),
+                                success    : function(data,status,xrh){
+                                },
+                                error      : function (err) {
+                                    console.log(err);
+                                },
+                                complete: function (data) {
+                                    console.log('Registration & Mail Complete');
+
+                                }
+                            });
+
+                        },
+                        error      : function (err) {
+                            console.log('ERROR ');
+                            console.log(err);
+                        },
+                        complete: function (data) {
+                            
+                        }
+            
+                    });
+                },
+                error      : function (err) {
+
+                    if(err.status == 409){
+
+                        $("#responseRegister").append("Sei già registrato al nostro club.");
+                        $("#responseRegister2").append("Controlla la mail (anche nello spam) per rivedere tutte le nostre newsletter di aggiornamento.");
+                    } else if(err.status == 410){
+                        $("#responseRegister").append("Errore nel form, ricarica la pagina");
+                        $("#responseRegister2").append(`<a class="text-center justify-content-center center" href="/" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-refresh"></i>Ricarica</a>`);
+
+
+                    }
+
+                    
+                    console.log('ERROR ');
+                    console.log(err);
+                },
+                complete: function (data) {
+                    // qui mandare mail di benvenuto
+                }
+            });
+
         }
 
-        // setup some local variables
-        var $form = $(this);
-
-        // Let's select and cache all the fields
-        var $inputs = $form.find('textarea');
-
-        // Serialize the data in the form
-        var serializedData = $form.serialize();
-        var ele = serializedData.split('&',3)
-        var name = ele[0].split("=")[1];
-        var email = ele[1].split("=")[1];
-
-        $.ajax({
-
-            url : "http://localhost:5000/checkReg/",
-            type: "POST",
-            contentType: "application/json; carset=utf-8",
-            dataType   : "json",
-            data: JSON.stringify(
-                {
-                    "name":name,
-                    "email": email,
-
-                }
-            ),
-            success    : function(data,status,xrh){
-
-            },
-            error      : function (err) {
-                console.log(err);
-            },
-            complete: function (data) {
-               console.log('accettato ');
-
-            }
-
-        });
-
-
-
-
-        $.ajax({
-
-            url : "http://localhost:5000/sendemail/",
-            type: "POST",
-            contentType: "application/json; carset=utf-8",
-            dataType   : "json",
-            data: JSON.stringify(
-                {
-                    "name":name,
-                    "email": email,
-
-                }
-            ),
-            success    : function(data,status,xrh){
-
-            },
-            error      : function (err) {
-                console.log(err);
-            },
-            complete: function (data) {
-               console.log('mail inviata');
-
-            }
-
-        });
     })
 })
