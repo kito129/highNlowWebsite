@@ -1029,7 +1029,7 @@ jQuery(function ($) {
         gdprCookieNoticeLocales.it = {
             description: "Usiamo i cookie per migliorare l'esperienza di utilizzo del sito. Scopri di più su come li usiamo in Info. Autorizzi l'uso dei cookie procedendo al sito",
             settings: 'Cookie',
-            accept: 'Acceta cookies',
+            accept: 'Accetta cookies',
             statement: 'I nostri cookie',
             save: 'Salva',
             always_on: 'Always on',

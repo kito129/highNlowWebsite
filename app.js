@@ -1,3 +1,12 @@
+/**
+ * HigNLow 2.0
+ * 10/19/2020 start new version
+ * last version: 2.0.0
+ * last review:10/25/2020
+ * 
+ * update:  2.0.0  10/25/2020
+ * author highnlow:
+ */
 // to
 // pscp -r D:\00_PROJECTs\38_highnlow_site\site root@45.137.202.41:/site
 // pscp -r D:\00_PROJECTs\38_highnlow_site\site\app.js root@45.137.202.41:/site/site
@@ -15,6 +24,33 @@
   gtag('config', 'G-C1TE3Z1609');
 </script>
 */
+
+
+/**
+ * 
+ * cd /etc/nginx/sites-available
+sudo nano simpleServer
+Inside this file write this piece of code:
+server {
+    listen 80;
+    server_name <YourVPSIpAddress>;
+    location / {
+        proxy_pass http://localhost:3000/;
+    }
+}
+If you have your domain set up, you can do this.
+# ...
+server_name www.example.com example.com;
+# ...
+More information can be found in Nginx documentation.
+Final steps
+# check if your configuration is ok
+sudo nginx -t
+# enable your configuration
+sudo ln -s /etc/nginx/sites-available/simpleServer /etc/nginx/sites-enabled
+# restart nginx
+sudo systemctl restart nginx
+ */
 
 // TODO
 
@@ -34,6 +70,7 @@
 // TELEGRAM  ---  
 // LOGO AND ICON -- - - 
 
+
 // --- IMPORT ---
 
 //import dependencies
@@ -48,6 +85,7 @@ const path = require('path');
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 
 // --- DATABASE ---
 
@@ -134,14 +172,6 @@ app.use("/email", emailRoutes);
 
 // Routes for public file (static)
 app.use(express.static(path.join(__dirname, './public')));
-
-
-
-// --- MAIL AND REG ---
-
-
-
-
 
 
 // --- API START ---
