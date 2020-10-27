@@ -30,7 +30,7 @@ $(document).ready(function(){
     //ARTIST
     var idIdea=getUrlParameterValue(self.location.href,"id");
 
-	$.get("http://localhost:3000/idea/" + idIdea, function(data, status){
+	$.get("https:/www.highnlow.it/idea/" + idIdea, function(data, status){
 
         var Idea=JSON.parse(data);
         var _idea = Idea.idea;
@@ -39,20 +39,22 @@ $(document).ready(function(){
         $("#title").text(_idea.title);
         $("#ticker").text(_idea.ticker);
 
-        // PHOTO GALLERY TEXT
-        for (let j = 0; j < _idea.photoGallery.length; j++) {
-            const element = _idea.photoGallery[j];
+        console.log(_idea.photoGallery)
 
-            $("#immage").append(
-                `     
-                <!-- Image ${j} -->
-                <div class="gallery p-3">
+        // PHOTO GALLERY TEXT
+     
+        const element = _idea.photoGallery[0];
+
+        $("#photoGallery").append(
+            `     
+            <div class="gallery p-3">
+                <a href="${element}">
                     <img src="${element}" class="w-100">
-                </div>
-                `
-            );
-            
-        }
+                </a>
+            </div>
+            `
+        );
+       
 
 
         var data = new Date(_idea.date);

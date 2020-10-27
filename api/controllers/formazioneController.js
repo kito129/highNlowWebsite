@@ -107,7 +107,7 @@ exports.formaziones_get_formazione = (req, res, next) => {
           formazione: doc,
           request: {
             type: "GET",
-            url: "http://localhost:3000/formazione/"+ doc._id
+            url: "https:/www.highnlow.it/formazione/"+ doc._id
           }
         }));
       } else {
