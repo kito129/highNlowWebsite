@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	$.get("https://www.highnlow.it/formazione", function(data, status){
+	$.get("http://localhost:3000/formazione", function(data, status){
 
         var Formazione=JSON.parse(data);
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="https://www.highnlow.it/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
+                            <a href="http://localhost:3000/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
                                 <h3>${_formazione.title}</h3>
                             </a>
                         </div>

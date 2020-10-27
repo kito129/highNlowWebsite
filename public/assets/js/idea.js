@@ -30,7 +30,7 @@ $(document).ready(function(){
     //ARTIST
     var idIdea=getUrlParameterValue(self.location.href,"id");
 
-	$.get("https://www.highnlow.it/idea/" + idIdea, function(data, status){
+	$.get("http://localhost:3000/idea/" + idIdea, function(data, status){
 
         var Idea=JSON.parse(data);
         var _idea = Idea.idea;

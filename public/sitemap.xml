@@ -8,57 +8,67 @@
 
 
 <url>
-  <loc>https://www.highnlow.it/</loc>
+  <loc>https://localhost:3000/</loc>
   <lastmod>2020-10-26T15:04:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/articoli/idee.html</loc>
+  <loc>https://localhost:3000/assets/pages/articoli/idee.html</loc>
   <lastmod>2020-10-26T15:04:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/articoli/formazione.html</loc>
+  <loc>https://localhost:3000/assets/pages/articoli/formazione.html</loc>
   <lastmod>2020-10-26T15:04:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/mercati.html</loc>
+  <loc>https://localhost:3000/assets/pages/mercati.html</loc>
   <lastmod>2020-10-26T15:04:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/partner.html</loc>
+  <loc>https://localhost:3000/assets/pages/partner.html</loc>
   <lastmod>2020-10-26T15:04:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/contatti.html</loc>
+  <loc>https://localhost:3000/assets/pages/contatti.html</loc>
   <lastmod>2020-10-26T15:04:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/iscrizione.html</loc>
+  <loc>https://localhost:3000/assets/pages/iscrizione.html</loc>
   <lastmod>2020-10-26T15:04:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/partner/atfx.html</loc>
+  <loc>https://localhost:3000/assets/pages/partner/atfx.html</loc>
   <lastmod>2020-10-26T15:04:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/partner/capital.html</loc>
+  <loc>https://localhost:3000/assets/pages/partner/capital.html</loc>
   <lastmod>2020-10-26T15:04:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/partner/etoro.html</loc>
+  <loc>https://localhost:3000/assets/pages/partner/etoro.html</loc>
   <lastmod>2020-10-26T15:04:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/partner/roiinvesting.html</loc>
+  <loc>https://localhost:3000/assets/pages/partner/roiinvesting.html</loc>
+  <lastmod>2020-10-26T15:04:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://localhost:3000/assets/pages/partner/fxcm.html</loc>
+  <lastmod>2020-10-26T15:04:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://localhost:3000/assets/pages/partner/excentral.html</loc>
   <lastmod>2020-10-26T15:04:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
