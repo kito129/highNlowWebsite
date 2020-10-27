@@ -1277,7 +1277,7 @@ $(function () {
             $.ajax({
 
                 // check if user already regitered
-                url : "https:/www.highnlow.it/registration/checkReg",
+                url : "https://www.highnlow.it/registration/checkReg",
                 type: "POST",
                 contentType: "application/json; carset=utf-8",
                 dataType   : "json",
@@ -1294,7 +1294,7 @@ $(function () {
                     // POST in DB
                     $.ajax({
 
-                        url : "https:/www.highnlow.it/registration/create",
+                        url : "https://www.highnlow.it/registration/create",
                         type: "POST",
                         contentType: "application/json; carset=utf-8",
                         dataType   : "json",
@@ -1313,7 +1313,7 @@ $(function () {
                             $.ajax({
 
                                 // CALL BACK END TO SEND EMAIL TO NEW SUBSCRIBER
-                                url : "https:/www.highnlow.it/email/send",
+                                url : "https://www.highnlow.it/email/send",
                                 type: "POST",
                                 contentType: "application/json; carset=utf-8",
                                 dataType   : "json",

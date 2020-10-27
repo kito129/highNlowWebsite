@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	$.get("https:/www.highnlow.it/formazione/home", function(data, status){
+	$.get("https://www.highnlow.it/formazione/home", function(data, status){
 
         var Formazione=JSON.parse(data);
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="https:/www.highnlow.it/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
+                            <a href="https://www.highnlow.it/assets/pages/articoli/singolo_formazione.html?id=${_formazione._id}">
                                 <h4>${_formazione.title}</h4>
                             </a>
                         </div>
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
 
 
-    $.get("https:/www.highnlow.it/idea/home", function(data, status){
+    $.get("https://www.highnlow.it/idea/home", function(data, status){
 
         var Idea=JSON.parse(data);
         
@@ -97,7 +97,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-caption col-12 p-0">
                         <div class="card-body">
-                            <a href="https:/www.highnlow.it/assets/pages/articoli/singolo_idea.html?id=${idea._id}">
+                            <a href="https://www.highnlow.it/assets/pages/articoli/singolo_idea.html?id=${idea._id}">
                                 <h4>${idea.title}</h4>
                             </a>
                         </div>

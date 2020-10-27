@@ -38,7 +38,7 @@ server {
     listen 80;
     server_name www.highnlow.it highnlow.it;
     location / {
-        proxy_pass https:/www.highnlow.it/;
+        proxy_pass https://www.highnlow.it/;
     }
 }
 
