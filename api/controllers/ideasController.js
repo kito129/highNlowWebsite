@@ -107,7 +107,7 @@ exports.ideas_get_idea = (req, res, next) => {
           idea: doc,
           request: {
             type: "GET",
-            url: "http://highnlow.it/idea/"+ doc._id
+            url: "https://www.highnlow.it/idea/"+ doc._id
           }
         }));
       } else {

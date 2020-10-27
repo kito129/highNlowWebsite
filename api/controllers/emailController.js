@@ -36,7 +36,7 @@ exports.email_send_email = (req, res, next) => {
   // configure the mail
   var mailOptions = {
     from: process.env.GMAIL_USER,//replace with your email
-    to: 'selva.marco.bet@gmail.com',//replace with your email
+    to: 'highnlowita@gmail.com',//replace with your email
     subject: `Contact name: ${req.body.name}`,
     html:`
           <h1>New registration on high n low</h1>
@@ -63,7 +63,7 @@ exports.email_send_email = (req, res, next) => {
 
   // configure the mail
   var mailOptions = {
-    from: "info@highnlow.it",//replace with your email
+    from: "highnlowita@gmail.com",//replace with your email
     to: to,//replace with your email
     subject: `Benvenuto in HighNLow, ${req.body.name}!`,
     // todo
@@ -232,7 +232,7 @@ exports.email_send_email = (req, res, next) => {
 																<td align="left">
 																	<table border="0" cellspacing="0" cellpadding="0">
 																		<tr>
-																			<td class="blue-button text-button" style="background:#d1d424ec; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="http://www.highnlow.it/assets/pages/mercati.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">VISITA I MERCATI</span></a></td>
+																			<td class="blue-button text-button" style="background:#d1d424ec; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="www.highnlow.it/assets/pages/mercati.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">VISITA I MERCATI</span></a></td>
 																		</tr>
 																	</table>
 																</td>
@@ -272,7 +272,7 @@ exports.email_send_email = (req, res, next) => {
 																			<td align="left">
 																				<table border="0" cellspacing="0" cellpadding="0">
 																					<tr>
-																						<td class="blue-button text-button" style="background:#d1d424ec; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="http://www.highnlow.it/assets/pages/articoli.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Vedi Articoli</span></a></td>
+																						<td class="blue-button text-button" style="background:#d1d424ec; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="www.highnlow.it/assets/pages/articoli/formazione.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Vedi Articoli</span></a></td>
 																					</tr>
 																				</table>
 																			</td>
@@ -297,7 +297,7 @@ exports.email_send_email = (req, res, next) => {
 																			<td align="left">
 																				<table border="0" cellspacing="0" cellpadding="0">
 																					<tr>
-																						<td class="blue-button text-button" style="background:#d1d424ec; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="http://www.highnlow.it/assets/pages/idee.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Vedi Idee</span></a></td>
+																						<td class="blue-button text-button" style="background:#d1d424ec; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="www.highnlow.it/assets/pages/articoli/idee.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Vedi Idee</span></a></td>
 																					</tr>
 																				</table>
 																			</td>
@@ -334,7 +334,7 @@ exports.email_send_email = (req, res, next) => {
 																<td align="center">
 																	<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
 																		<tr>
-																			<td class="pink-button text-button" style="background:#2f323a; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="http://www.highnlow.it/partner" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">CONTATTI</span></a></td>
+																			<td class="pink-button text-button" style="background:#2f323a; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="www.highnlow.it/assets/pages/partner.html" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">CONTATTI</span></a></td>
 																		</tr>
 																	</table>
 																</td>

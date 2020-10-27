@@ -1,75 +1,12 @@
 /**
  * HigNLow 2.0
  * 10/19/2020 start new version
- * last version: 2.0.0
- * last review:10/25/2020
+ * last version:  2.0.0
+ * last review: 10/25/2020
  * 
  * update:  2.0.0  10/25/2020
- * author highnlow:
+ * author:  highnlow
  */
-// to
-// pscp -r D:\00_PROJECTs\38_highnlow_site\site root@45.137.202.41:/site
-// pscp -r D:\00_PROJECTs\38_highnlow_site\site\app.js root@45.137.202.41:/site/site
-
-//t5HtB8faHQ8
-
-/*
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C1TE3Z1609"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C1TE3Z1609');
-</script>
-*/
-
-
-/**
- * 
- * cd /etc/nginx/sites-available
-sudo nano simpleServer
-Inside this file write this piece of code:
-server {
-    listen 80;
-    server_name <YourVPSIpAddress>;
-    location / {
-        proxy_pass http://localhost:3000/;
-    }
-}
-If you have your domain set up, you can do this.
-# ...
-server_name www.example.com example.com;
-# ...
-More information can be found in Nginx documentation.
-Final steps
-# check if your configuration is ok
-sudo nginx -t
-# enable your configuration
-sudo ln -s /etc/nginx/sites-available/simpleServer /etc/nginx/sites-enabled
-# restart nginx
-sudo systemctl restart nginx
- */
-
-// TODO
-
-//  IMG FORMAZIONE  --- 
-//  FROMAZIONE -> ARTICOLI ---
-// IDEE TOGLIERE PUNTO  --- 
-
-// PARTNER   --- 
-// ETORO IMG ONLINE  ---  
-//BANNER  ---  
-// CHECK ALL HEAD AND FOOTER  ---  
-// COOCKIE
-// MAIL  ---
-
-// REGISTRAZIONE POST ---
-// API PER HOME // LAST 3 IDEA & ARTICLE  --- 
-// TELEGRAM  ---  
-// LOGO AND ICON -- - - 
-
 
 // --- IMPORT ---
 
@@ -138,26 +75,6 @@ app.use((req, res, next) => {
   next();
 });
 
-//error 404 for not found routers
-/*
-TODO TO FIX
-app.use((req, res, next) => {
-  const error = new Error("Route Not Valid");
-  error.status = 404;
-  next(error);
-});
-*/
-
-//specific error or 500 generic error routers gestor
-app.use((error, req, res, next) => {
-  res.status(error.status || 500);
-  res.json(JSON.stringify({
-    error: {
-      message: error.message
-    }
-  }));
-});
-
 //import API routes
 const ideasRoutes = require("./api/routes/ideasRoutes");
 const formazioneRoutes = require("./api/routes/formazioneRoutes");
@@ -172,6 +89,23 @@ app.use("/email", emailRoutes);
 
 // Routes for public file (static)
 app.use(express.static(path.join(__dirname, './public')));
+
+//error 404 for not found routers
+app.use((req, res, next) => {
+  const error = new Error("Route Not Valid");
+  res.status(404);
+  res.sendFile(path.join(__dirname, '/public/404.html'));
+});
+
+//specific error or 500 generic error routers gestor
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  res.json(JSON.stringify({
+    error: {
+      message: error.message
+    }
+  }));
+});
 
 
 // --- API START ---

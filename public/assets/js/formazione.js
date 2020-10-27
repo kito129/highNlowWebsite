@@ -30,7 +30,7 @@ $(document).ready(function(){
     //ARTIST
     var idFormazione=getUrlParameterValue(self.location.href,"id");
 
-	$.get("http://highnlow.it/formazione/" + idFormazione, function(data, status){
+	$.get("https://www.highnlow.it/formazione/" + idFormazione, function(data, status){
 
         var Formazione=JSON.parse(data);
         var _formazione = Formazione.formazione;

@@ -1,14 +1,13 @@
 {
     "env": {
         "MONGO_ATLAS_PW": "tgtfAdL9XcAsFky6",
-        "GMAIL_USER": "locustcamtv@gmail.com",
-        "GMAIL_PASSWD": "23anSZBC6aVS",
+        "GMAIL_USER": "highnlowita@gmail.com",
         "JWT_KEY": "secret",
-        "ID_CLIENT": "375330882626-jjtoravrscteem7gl15scs69v6krtdfg.apps.googleusercontent.com",
-        "CLIENT_SECRET": "-BLlKwHwqTSF_het6LFhvVJQ",
-        "AUTH_CODE": "4/0AfDhmrgT2IQFxYVhoEDSusi2p8JP028xG8NGHzmiOCfA11JedC0tm0wwpGlpJfqXmAw60w",
-        "REFRESH_CODE": "1//046UYXHRFTrdBCgYIARAAGAQSNwF-L9IranDWFCjSUNI_lC7XotWkw9s_yW1BHyJlBtDGF6FoPBRE_uexI191ymPHMT1vI_AuOXI",
-        "ACCES_TOKEN": "ya29.a0AfH6SMCQy49SATVexnDjP24KRb1Uj6j11m-LhbOGAmKqMGpHAB2QWC9IHdAWlg-jcSirnqfuwnrqTaawjYHNKEluSvao7i-5MtWz3T-tuyVOKhLgNV_WHcXkpg4dxm9zIxC8VA0lKzscdN1iMEQRPANOFK-zlV66o-U"
+        "ID_CLIENT": "500963871136-5m2b9a4qlkfjm5kl3d54m26vtk01ck06.apps.googleusercontent.com",
+        "CLIENT_SECRET": "I_BnKHbtGwqm-WhgXo5N7njE",
+        "AUTH_CODE": "4/5gFdem-1XaP7_aoVYrz2hvZ0k0iYLGY63OIpkTV9Al-TgLEUcuCgGaH4dF9mnn5oHCUUZgipCZtD87XbQL78JTY",
+        "REFRESH_CODE": "1//04reQJhQROwnhCgYIARAAGAQSNwF-L9IrGKnB6qOs9efINMW7AvM8iStmL82TAPQJJrXy594lekmE794rc84p2uVkHJPGf-Z-hzk",
+        "ACCES_TOKEN": "ya29.a0AfH6SMBGyjnu5IvO8GW_DYCVDRf0UdM13iAHnMN9K9zWctzKR69tzCf4cniUVNAKSuO5xztchNkDUaFMKEHAeP8539UkfD66BuCwZLo1MI4MBECu1nTdHiXNQLxClWwljjMvFaNNi-c4a-I45jdoyonZNE_l0Ej7zFQ"
 
 
     }
