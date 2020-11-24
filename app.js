@@ -18,6 +18,27 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require('path');
 
+// pm2 metrics
+const io = require('@pm2/io')
+
+var meter = io.meter({
+  name      : 'req/min',
+  samples   : 1,
+  timeframe : 60
+})
+
+var histogram = io.histogram({
+  name        : 'latency',
+  measurement : 'mean'
+})
+
+var latency = 0
+
+setInterval(function() {
+  latency = Math.round(Math.random() * 100)
+  histogram.update(latency)
+}, 100)
+
 //use middleware 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -68,6 +89,9 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
   );
+
+  meter.mark()
+
   if (req.method === "OPTIONS") {
     res.header("Access-Control-Allow-Methods", "GET");
     return res.status(200).json({});

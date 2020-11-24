@@ -359,15 +359,24 @@ exports.email_send_email = (req, res, next) => {
 												</tr>
 												<tr>
 													<td class="text-footer2" style="color:#8297b3; font-family:'Muli', Arial,sans-serif; font-size:12px; line-height:26px; text-align:center;">
-														<h2>Disclamer</h2>
-														<p>
-															Questo sito ha finalità esclusivamente informative e didattiche e non è da intendersi in alcun modo come un’offerta di vendita, consulenza (fiscale, legale o finanziaria) o come una sollecitazione all’investimento o al pubblico risparmio. 
-															Il contenuto di questo sito si basa su dati e informazioni di pubblico dominio che noi consideriamo affidabili, ma di cui non siamo in grado di garantire l’esattezza, l’accuratezza e la completezza e che non implicano in ogni caso alcuna responsabilità da parte Nostra. 
-															<br><br>Le informazioni pubblicate possono basarsi su determinati dati, presupposti, opinioni o previsioni che possono anche cambiare nel tempo, ed in ogni caso hanno sempre e comunque solo uno scopo didattico e non devono essere considerate come raccomandazioni d’acquisto. 
-															L’utente pertanto dovrà sempre verificarne l’esattezza e l’attualità e qualora decidesse di investire negli strumenti finanziari analizzati e/o commentati lo farà assumendosene la piena responsabilità.
-															<br><br>Le informazioni e i documenti pubblicati sul Sito hanno finalità informativa e/o pubblicitaria/promozionale, e non sono in alcun modo da intendersi né come consulenza, né come ricerca in materia di investimenti; 
-															qualsiasi prodotto, strumento, servizio di investimento cui fa riferimento il Sito potrebbe essere non adeguato per l’utente.
-														</p>
+													<h4>Disclaimer</h4>
+													<h5>
+														I CFD sono strumenti complessi e presentano un elevato rischio di perdere denaro rapidamente a causa della leva.
+													</h5>
+													<h5>
+														L'72.42% dei conti di investitori al dettaglio perde denaro facendo trading con i CFD.                                
+													</h5>
+													<h5>
+														Valuta se ti puoi permettere l'elevato rischio di perdere denaro
+													</h5>
+													<p>
+														Questo sito ha finalità esclusivamente informative e didattiche e non è da intendersi in alcun modo come un’offerta di vendita, consulenza (fiscale, legale o finanziaria) o come una sollecitazione all’investimento o al pubblico risparmio. 
+														Il contenuto di questo sito si basa su dati e informazioni di pubblico dominio che noi consideriamo affidabili, ma di cui non siamo in grado di garantire l’esattezza, l’accuratezza e la completezza e che non implicano in ogni caso alcuna responsabilità da parte Nostra. 
+														<br><br>Le informazioni pubblicate possono basarsi su determinati dati, presupposti, opinioni o previsioni che possono anche cambiare nel tempo, ed in ogni caso hanno sempre e comunque solo uno scopo didattico e non devono essere considerate come raccomandazioni d’acquisto. 
+														L’utente pertanto dovrà sempre verificarne l’esattezza e l’attualità e qualora decidesse di investire negli strumenti finanziari analizzati e/o commentati lo farà assumendosene la piena responsabilità.
+														<br><br>Le informazioni e i documenti pubblicati sul Sito hanno finalità informativa e/o pubblicitaria/promozionale, e non sono in alcun modo da intendersi né come consulenza, né come ricerca in materia di investimenti; 
+														qualsiasi prodotto, strumento, servizio di investimento cui fa riferimento il Sito potrebbe essere non adeguato per l’utente.
+													</p>
 													</td>
 												</tr>
 											</table>

@@ -27,7 +27,7 @@ function getUrlParameterValue(url, parameter) {
 $(document).ready(function(){
 
 
-    //ARTIST
+    //ARTICOLO
     var idFormazione=getUrlParameterValue(self.location.href,"id");
 
 	$.get("https://www.highnlow.it/formazione/" + idFormazione, function(data, status){
@@ -38,9 +38,23 @@ $(document).ready(function(){
         // TEXT
         $("#mainTitle").text(_formazione.title);
         $("#title").text(_formazione.title);
+        $("#titlePage").text(_formazione.title);
         $("#imgTitle").text(_formazione.title);
         $("#subtitle").text(_formazione.subtitle);
         $("#paragraph").append(_formazione.paragraph);
+
+        var uri = window.location.href;
+        var uri_enc = encodeURIComponent(uri);
+
+        console.log(uri_enc);
+
+        $("#fbButton").append( 
+            ` 
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=${uri_enc}layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        
+            `
+        );
+
 
         // TAG
         for (let i = 0; i < _formazione.tag.length; i++) {

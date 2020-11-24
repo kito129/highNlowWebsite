@@ -37,9 +37,11 @@ $(document).ready(function(){
 
         $("#titleMain").text(_idea.title);
         $("#title").text(_idea.title);
+        $("#titlePage").text(_idea.title);
         $("#ticker").text(_idea.ticker);
 
-        console.log(_idea.photoGallery)
+        var uri = window.location.href;
+        var uri_enc = encodeURIComponent(uri);
 
         // PHOTO GALLERY TEXT
      
