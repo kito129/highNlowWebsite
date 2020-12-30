@@ -5,7 +5,66 @@ $(document).ready(function(){
 
         var Formazione=JSON.parse(data);
 
-        var text="";
+        /*
+        var text= 
+        ` 
+        
+        <!--TURBO 24 IG 1-->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 card p-3 text-center item">
+            <div class="image-over">
+                <img src="https://ik.imagekit.io/uvbstpfvet/Artboard_17_vEtytDRvQ.png" alt="mia">
+            </div>
+            <div class="card-caption col-12 p-0">
+                <div class="card-body">
+                    <a href="http://localhost:3000/assets/pages/ig/turbo24ig1.html">
+                        <h3>#1001 - Special IG - Certificati Turbo24</h3>
+                    </a>
+                </div>
+                <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
+                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>21/12/2020</a>
+                    <a class="p-1 col align-items-left"><i class="icon-menu"></i>Esclusivi</a>
+                </div>
+            </div>
+        </div>
+        <!--TURBO 24 IG 2-->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 card p-3 text-center item">
+            <div class="image-over">
+                <img src="https://ik.imagekit.io/uvbstpfvet/Artboard_18_U_cfZWI77z.png" alt="mia">
+            </div>
+            <div class="card-caption col-12 p-0">
+                <div class="card-body">
+                    <a href="http://localhost:3000/assets/pages/ig/turbo24ig2.html">
+                        <h3>#1002 - Special IG - Certificati Turbo24</h3>
+                    </a>
+                </div>
+                <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
+                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>30/12/2020</a>
+                    <a class="p-1 col align-items-left"><i class="icon-menu"></i>Esclusivi</a>
+                </div>
+            </div>
+        </div>
+        <!--TURBO 24 IG 3-->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 card p-3 text-center item">
+            <div class="image-over">
+                <img src="https://ik.imagekit.io/uvbstpfvet/Artboard_19_O8ilNNk7y2QF5.png" alt="mia">
+            </div>
+            <div class="card-caption col-12 p-0">
+                <div class="card-body">
+                    <a href="http://localhost:3000/assets/pages/ig/turbo24ig3.html">
+                        <h3>#1003 - Special IG - Certificati Turbo24</h3>
+                    </a>
+                </div>
+                <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
+                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>04/01/2021</a>
+                    <a class="p-1 col align-items-left"><i class="icon-menu"></i>Esclusivi</a>
+                </div>
+            </div>
+        </div>
+
+        `;
+        */
+
+        text = ""
 
 
 		for(var i=0;i<Formazione.formaziones.length;i++){
