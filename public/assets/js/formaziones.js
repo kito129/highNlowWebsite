@@ -15,7 +15,7 @@ $(document).ready(function(){
             </div>
             <div class="card-caption col-12 p-0">
                 <div class="card-body">
-                    <a href="http://localhost:3000/assets/pages/ig/turbo24ig1.html">
+                    <a href="https://highnlow.it/assets/pages/ig/turbo24ig1.html">
                         <h3>#1001 - Special IG - Certificati Turbo24</h3>
                     </a>
                 </div>
@@ -32,7 +32,7 @@ $(document).ready(function(){
             </div>
             <div class="card-caption col-12 p-0">
                 <div class="card-body">
-                    <a href="http://localhost:3000/assets/pages/ig/turbo24ig2.html">
+                    <a href="https://highnlow.it/assets/pages/ig/turbo24ig2.html">
                         <h3>#1002 - Special IG - Certificati Turbo24</h3>
                     </a>
                 </div>
@@ -49,7 +49,7 @@ $(document).ready(function(){
             </div>
             <div class="card-caption col-12 p-0">
                 <div class="card-body">
-                    <a href="http://localhost:3000/assets/pages/ig/turbo24ig3.html">
+                    <a href="https://highnlow.it/assets/pages/ig/turbo24ig3.html">
                         <h3>#1003 - Special IG - Certificati Turbo24</h3>
                     </a>
                 </div>
