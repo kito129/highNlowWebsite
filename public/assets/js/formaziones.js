@@ -5,10 +5,9 @@ $(document).ready(function(){
 
         var Formazione=JSON.parse(data);
 
-        /*
+
         var text= 
         ` 
-        
         <!--TURBO 24 IG 1-->
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 card p-3 text-center item">
             <div class="image-over">
@@ -21,7 +20,7 @@ $(document).ready(function(){
                     </a>
                 </div>
                 <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
-                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>21/12/2020</a>
+                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>03/02/2021</a>
                     <a class="p-1 col align-items-left"><i class="icon-menu"></i>Esclusivi</a>
                 </div>
             </div>
@@ -38,7 +37,7 @@ $(document).ready(function(){
                     </a>
                 </div>
                 <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
-                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>30/12/2020</a>
+                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>04/02/2021</a>
                     <a class="p-1 col align-items-left"><i class="icon-menu"></i>Esclusivi</a>
                 </div>
             </div>
@@ -55,16 +54,13 @@ $(document).ready(function(){
                     </a>
                 </div>
                 <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
-                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>04/01/2021</a>
+                    <a class="p-1 col align-items-left"><i class="icon-clock"></i>05/02/2021</a>
                     <a class="p-1 col align-items-left"><i class="icon-menu"></i>Esclusivi</a>
                 </div>
             </div>
         </div>
 
         `;
-        */
-
-        text = ""
 
 
 		for(var i=0;i<Formazione.formaziones.length;i++){
@@ -89,7 +85,7 @@ $(document).ready(function(){
                             </a>
                         </div>
                         <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
-                            <a class="p-1 col align-items-left"><i class="icon-clock"></i>${data.getDate()}/${data.getMonth()}/${data.getFullYear()}</a>
+                            <a class="p-1 col align-items-left"><i class="icon-clock"></i>${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()}</a>
                             <a class="p-1 col align-items-left"><i class="icon-menu"></i>${_formazione.tag}</a>
                         </div>
                     </div>
@@ -111,4 +107,3 @@ $(document).ready(function(){
  
 });
 
-	

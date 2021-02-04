@@ -53,7 +53,7 @@ $(document).ready(function(){
                             </a>
                         </div>
                         <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
-                            <a class="p-1 col align-items-left"><i class="icon-clock"></i>${data.getDate()}/${data.getMonth()}/${data.getFullYear()}</a>
+                            <a class="p-1 col align-items-left"><i class="icon-clock"></i>${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()}</a>
                             <a class="p-1 col align-items-left"><i class="icon-location-pin"></i>${idea.ticker}</a>
                             <a class="p-1 col align-items-left"><img src="${direction}" class="trend-immage-small"></a>
                         </div>
@@ -79,4 +79,3 @@ $(document).ready(function(){
  
 });
 
-	

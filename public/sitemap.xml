@@ -58,10 +58,20 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.highnlow.it/assets/pages/partner/excentral.html</loc>
-  <lastmod>2020-10-26T15:04:58+00:00</lastmod>
+  <loc>https://www.highnlow.it/assets/pages/partner/xtb.html</loc>
+  <lastmod>2021-01-12T15:04:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.highnlow.it/assets/pages/partner/marketscom.html</loc>
+  <lastmod>2021-01-12T15:04:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+  <url>
+    <loc>https://www.highnlow.it/assets/pages/partner/ig.html</loc>
+    <lastmod>2021-01-12T15:04:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 
 </urlset>

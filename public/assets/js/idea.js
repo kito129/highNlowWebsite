@@ -61,7 +61,7 @@ $(document).ready(function(){
 
         var data = new Date(_idea.date);
 
-        $("#posted").text( `${data.getDate()}/${data.getMonth()}/${data.getFullYear()} `);
+        $("#posted").text( `${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()} `);
 
         var direction = "";
 
@@ -120,4 +120,3 @@ $(document).ready(function(){
     });
 });
 
-	

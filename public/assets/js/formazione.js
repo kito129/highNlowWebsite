@@ -71,7 +71,7 @@ $(document).ready(function(){
         // DATE
         var data = new Date(_formazione.date);
 
-        $("#posted").text( `${data.getDate()}/${data.getMonth()}/${data.getFullYear()} `);
+        $("#posted").text( `${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()} `);
 
         var today = new Date();
 
@@ -132,4 +132,3 @@ $(document).ready(function(){
     });
 });
 
-	
