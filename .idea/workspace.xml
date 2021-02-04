@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab126188-55c5-4387-b46f-5262c1367b85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/formazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/formazione.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/formaziones.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/formaziones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/idea.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/idea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/ideas.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/ideas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/formazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/formazione.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/idee.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/idee.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/singolo_formazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/singolo_formazione.html" afterDir="false" />
@@ -20,12 +17,11 @@
       <change beforePath="$PROJECT_DIR$/public/assets/pages/partner.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/bdswiss.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/bdswiss.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/etoro.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/etoro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/excentral.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/ig.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/ig.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/marketscom.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/marketscom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/roiinvesting.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/roiinvesting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/xtb.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/xtb.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="2812" />
+    <option name="totalTimeSeconds" value="4287" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612449165963</updated>
-      <workItem from="1612449167097" duration="3187000" />
+      <workItem from="1612449167097" duration="4845000" />
     </task>
     <servers />
   </component>
