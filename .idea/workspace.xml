@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab126188-55c5-4387-b46f-5262c1367b85" name="Default Changelist" comment="" />
+    <list default="true" id="ab126188-55c5-4387-b46f-5262c1367b85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/formaziones.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/formaziones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/formazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/formazione.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/idee.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/idee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/singolo_formazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/singolo_formazione.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/articoli/singolo_idea.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/articoli/singolo_idea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/contatti.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/contatti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/ig/turbo24ig1.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/ig/turbo24ig1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/ig/turbo24ig2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/ig/turbo24ig2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/ig/turbo24ig3.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/ig/turbo24ig3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/iscrizione.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/iscrizione.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/mercati.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/mercati.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/bdswiss.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/bdswiss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/etoro.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/etoro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/ig.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/ig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/marketscom.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/marketscom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/roiinvesting.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/roiinvesting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/pages/partner/xtb.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pages/partner/xtb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spec.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="4658" />
+    <option name="totalTimeSeconds" value="5605" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612449165963</updated>
-      <workItem from="1612449167097" duration="5263000" />
+      <workItem from="1612449167097" duration="6859000" />
     </task>
     <servers />
   </component>
@@ -48,10 +71,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="586" y="-928" width="566" height="636" key="find.popup" timestamp="1612451862378">
+    <state x="586" y="-928" width="566" height="636" key="find.popup" timestamp="1612456372737">
       <screen x="0" y="-1080" width="1739" height="939" />
     </state>
-    <state x="586" y="-928" width="566" height="636" key="find.popup/0.0.1739.939/0.-1080.1739.939@0.-1080.1739.939" timestamp="1612451862378" />
+    <state x="586" y="-928" width="566" height="636" key="find.popup/0.0.1739.939/0.-1080.1739.939@0.-1080.1739.939" timestamp="1612456372737" />
     <state x="527" y="-324" key="run.anything.popup" timestamp="1612449787161">
       <screen x="0" y="-1080" width="1739" height="939" />
     </state>

@@ -50,7 +50,7 @@ $(document).ready(function(){
             <div class="card-caption col-12 p-0">
                 <div class="card-body">
                     <a href="https://highnlow.it/assets/pages/ig/turbo24ig3.html">
-                        <h3>#1003 - Special IG - Certificati Turbo24</h3>
+                        <h3>#1003 - Special IG - CFD e Opzioni</h3>
                     </a>
                 </div>
                 <div class="row card-footer align-items-center justify-content-left xs-justify-content-left sm-justify-content-left">
