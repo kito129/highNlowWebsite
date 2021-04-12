@@ -364,7 +364,7 @@ exports.email_send_email = (req, res, next) => {
 														I CFD sono strumenti complessi e presentano un elevato rischio di perdere denaro rapidamente a causa della leva.
 													</h5>
 													<h5>
-														L'72.42% dei conti di investitori al dettaglio perde denaro facendo trading con i CFD.                                
+														Il 67% dei conti di investitori al dettaglio perde denaro facendo trading con i CFD.                                
 													</h5>
 													<h5>
 														Valuta se ti puoi permettere l'elevato rischio di perdere denaro
