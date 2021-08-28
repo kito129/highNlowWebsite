@@ -6,6 +6,8 @@ $(document).ready(function(){
         var Formazione=JSON.parse(data);
 
 
+
+        /*
         var text= 
         ` 
         <!--TURBO 24 IG 1-->
@@ -61,6 +63,8 @@ $(document).ready(function(){
         </div>
 
         `;
+
+        */
 
 
 		for(var i=0;i<Formazione.formaziones.length;i++){
