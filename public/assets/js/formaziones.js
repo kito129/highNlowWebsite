@@ -5,7 +5,7 @@ $(document).ready(function(){
 
         var Formazione=JSON.parse(data);
 
-
+        var text= "";
 
         /*
         var text= 
